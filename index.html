@@ -1,0 +1,110 @@
+<!-- in the name of ALLAH -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <div id="root" class="container-fluid py-3 ">
+        <div class="d-flex" id="mine">
+            <div id="table" class="table-responsive  px-3">
+                <table class="table table-hover table-inverse">
+                    <thead class="thead-inverse">
+                        <tr class="bg-dark text-white">
+                            <th>#</th>
+                            <th>name</th>
+                            <th>last name</th>
+                            <th>phone</th>
+                            <th>email</th>
+                            <th>birthday</th>
+                            <th>details</th>
+                            <th>action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>mohammad</td>
+                            <td>sarabi</td>
+                            <td>09901545451</td>
+                            <td>oerng@gmai.com</td>
+                            <td>80/1/28</td>
+                            <td>nothing</td>
+                            <td>
+                                <button onclick="deleteContact()" class="btn btn-danger"><i
+                                        class="fa fa-trash"></i></button>
+                                <button id="editButton" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="form" class="px-3 bg-dark text-white">
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="idName">Name :</label>
+                        <input type="text" class="form-control" name="name" id="idName" aria-describedby="emailHelp">
+                        <!-- <small id=" emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="idLastname">Nast name :</label>
+                        <input type="text" class="form-control" name="lastName" id="idLastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="idPhone">Phone :</label>
+                        <input type="number" class="form-control" name="phone" id="idPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="idEmail">Email :</label>
+                        <input type="emil" class="form-control" name="email" id="idEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="idBirthday">Birthday :</label>
+                        <input type="datetime-local" class="form-control" name="birthday" id="idBirthday">
+                    </div>
+                    <div class="form-group">
+                        <label for="idDetails">Details :</label>
+                        <input type="password" class="form-control" name="" id="idDetails">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form><br>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
