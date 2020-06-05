@@ -1,9 +1,9 @@
 <!-- in the name of ALLAH -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>contact</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +20,7 @@
     <div id="root" class="container-fluid py-3 ">
         <div class="d-flex" id="mine">
             <div id="table" class="table-responsive  px-3">
-                <table class="table table-hover table-inverse">
+                <table id="contactTable" class="table table-hover table-inverse">
                     <thead class="thead-inverse">
                         <tr class="bg-dark text-white">
                             <th>#</th>
@@ -53,10 +53,15 @@
 
                     </tbody>
                 </table>
+                <button type="button" onclick="" id="addButton" class="btn btn-primary px-3">add</button>
             </div>
             <div id="form" class="px-3 bg-dark text-white">
                 <br>
-                <form>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="idLastname">ID :</label>
+                        <input type="number" class="form-control" name="id" id="idLastname">
+                    </div>
                     <div class="form-group">
                         <label for="idName">Name :</label>
                         <input type="text" class="form-control" name="name" id="idName" aria-describedby="emailHelp">
@@ -69,7 +74,7 @@
                     </div>
                     <div class="form-group">
                         <label for="idPhone">Phone :</label>
-                        <input type="number" class="form-control" name="phone" id="idPhone">
+                        <input type="text" class="form-control" name="phone" id="idPhone">
                     </div>
                     <div class="form-group">
                         <label for="idEmail">Email :</label>
@@ -81,7 +86,7 @@
                     </div>
                     <div class="form-group">
                         <label for="idDetails">Details :</label>
-                        <input type="password" class="form-control" name="" id="idDetails">
+                        <input type="text" class="form-control" name="" id="idDetails">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form><br>
@@ -102,7 +107,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="./js/jquery.js"></script>
+    <script src="./js/alert.js"></script>
     <script src="./js/script.js"></script>
+    
 
 
 </body>
